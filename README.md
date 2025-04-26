@@ -8,6 +8,7 @@ Based on user preferences and ratings, the system provides personalized movie re
 ----------------------------------------------------  
 
 ## Tools and Technologies
+C#  
 ASP.NET Core MVC  
 ASP.NET Core Web API    
 Entity Framework Core  
@@ -20,7 +21,7 @@ Microsoft.VisualStudio.Web.CodeGeneration.Design
 Microsoft.EntityFrameworkCore.SqlServer  
 
 To WebApp and DAL:  
-PostgreSQL - Npgsql.EntityFrameworkCore.PostgreSQL  
+Npgsql.EntityFrameworkCore.PostgreSQL  
 Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore  
 Microsoft.AspNetCore.Identity.EntityFrameworkCore  
 
