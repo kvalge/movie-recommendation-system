@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using domain.Identity;
+using Domain.Identity;
 
-namespace domain.Entities;
+namespace Domain.Entities;
 
 public class Movie : BaseEntity
 {

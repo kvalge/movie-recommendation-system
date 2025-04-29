@@ -1,6 +1,6 @@
-﻿using domain.Identity;
+﻿using Domain.Identity;
 
-namespace domain.Entities;
+namespace Domain.Entities;
 
 public class Rating : BaseEntity
 {

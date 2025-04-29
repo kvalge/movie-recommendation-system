@@ -1,5 +1,5 @@
 using DAL;
-using domain.Identity;
+using Domain.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;

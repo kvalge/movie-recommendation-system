@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using domain.Identity;
+using Domain.Identity;
 
-namespace domain.Entities;
+namespace Domain.Entities;
 
 public class Review : BaseEntity
 {

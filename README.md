@@ -38,10 +38,10 @@ dotnet aspnet-codegenerator identity -dc DAL.AppDbContext -f
 ### MVC controllers Generation 
 cd WebApp  
 dotnet aspnet-codegenerator controller -name CastAndCrewsController        -actions -m  Domain.Entities.CastAndCrew        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
-dotnet aspnet-codegenerator controller -name CountriesController        -actions -m  Domain.Country        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
-dotnet aspnet-codegenerator controller -name GenresController        -actions -m  Domain.Genre        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
-dotnet aspnet-codegenerator controller -name MoviesController        -actions -m  Domain.Movie        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
-dotnet aspnet-codegenerator controller -name RatingsController        -actions -m  Domain.Rating        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
-dotnet aspnet-codegenerator controller -name RatingValuesController        -actions -m  Domain.RatingValue        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
-dotnet aspnet-codegenerator controller -name ReviewsController        -actions -m  Domain.Review        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name CountriesController        -actions -m  Domain.Entities.Country        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name GenresController        -actions -m  Domain.Entities.Genre        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name MoviesController        -actions -m  Domain.Entities.Movie        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name RatingsController        -actions -m  Domain.Entities.Rating        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name RatingValuesController        -actions -m  Domain.Entities.RatingValue        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name ReviewsController        -actions -m  Domain.Entities.Review        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
 

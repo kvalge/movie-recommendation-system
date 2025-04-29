@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace domain.Entities;
+namespace Domain.Entities;
 
 public class CastAndCrew : BaseEntity
 {

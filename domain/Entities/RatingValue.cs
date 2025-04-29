@@ -1,4 +1,4 @@
-﻿namespace domain.Entities;
+﻿namespace Domain.Entities;
 
 public class RatingValue : BaseEntity
 {

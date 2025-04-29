@@ -1,5 +1,5 @@
-﻿using domain.Entities;
-using domain.Identity;
+﻿using Domain.Entities;
+using Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

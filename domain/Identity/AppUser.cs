@@ -1,6 +1,6 @@
-using domain.Entities;
+using Domain.Entities;
 
-namespace domain.Identity;
+namespace Domain.Identity;
 
 using Microsoft.AspNetCore.Identity;
 
