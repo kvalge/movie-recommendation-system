@@ -37,7 +37,7 @@ dotnet aspnet-codegenerator identity -dc DAL.AppDbContext -f
 
 ### MVC controllers Generation 
 cd WebApp  
-dotnet aspnet-codegenerator controller -name CastAndCrewsController        -actions -m  Domain.CastAndCrew        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
+dotnet aspnet-codegenerator controller -name CastAndCrewsController        -actions -m  Domain.Entities.CastAndCrew        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
 dotnet aspnet-codegenerator controller -name CountriesController        -actions -m  Domain.Country        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
 dotnet aspnet-codegenerator controller -name GenresController        -actions -m  Domain.Genre        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  
 dotnet aspnet-codegenerator controller -name MoviesController        -actions -m  Domain.Movie        -dc AppDbContext -outDir Controllers --useDefaultLayout --useAsyncActions --referenceScriptLibraries -f  

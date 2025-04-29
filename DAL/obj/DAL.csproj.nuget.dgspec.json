@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj": {
-                "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj"
+              "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj": {
+    "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj",
-        "projectName": "domain",
-        "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj",
+        "projectUniqueName": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\katri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\obj\\",
+        "outputPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
