@@ -1,4 +1,6 @@
-﻿namespace domain.Entities;
+﻿using domain.Identity;
+
+namespace domain.Entities;
 
 public class Rating : BaseEntity
 {
@@ -7,4 +9,7 @@ public class Rating : BaseEntity
 
     public int MovieId { get; set; }
     public Movie Movie { get; set; } = null!;
+    
+    public int UserId { get; set; }
+    public AppUser User { get; set; } = null!;
 }

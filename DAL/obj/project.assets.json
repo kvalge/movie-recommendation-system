@@ -365,6 +365,19 @@
             "related": ".xml"
           }
         }
+      },
+      "domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/domain.dll": {}
+        }
       }
     }
   },
@@ -884,13 +897,19 @@
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
       ]
+    },
+    "domain/1.0.0": {
+      "type": "project",
+      "path": "../domain/domain.csproj",
+      "msbuildProject": "../domain/domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 9.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.0",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.1"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.1",
+      "domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -925,7 +944,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj": {
+              "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

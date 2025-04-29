@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using domain.Identity;
 
 namespace domain.Entities;
 
@@ -29,4 +30,9 @@ public class Movie : BaseEntity
     public ICollection<Country> Countries { get; set; } = new List<Country>();
 
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
+    
+    public ICollection<Rating> Ratings { get; set; } = new List<Rating>();
+    
+    public int UserId { get; set; }
+    public AppUser User { get; set; } = null!;
 }

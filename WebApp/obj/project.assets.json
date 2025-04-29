@@ -3228,13 +3228,27 @@
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "9.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.1"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.1",
+          "domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
         },
         "runtime": {
           "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/domain.dll": {}
         }
       }
     }
@@ -8533,6 +8547,11 @@
       "type": "project",
       "path": "../DAL/DAL.csproj",
       "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "domain/1.0.0": {
+      "type": "project",
+      "path": "../domain/domain.csproj",
+      "msbuildProject": "../domain/domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8545,7 +8564,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.1"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.1",
+      "domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8583,6 +8603,9 @@
           "projectReferences": {
             "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\DAL\\DAL.csproj": {
               "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\DAL\\DAL.csproj"
+            },
+            "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj": {
+              "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\domain\\domain.csproj"
             }
           }
         }
