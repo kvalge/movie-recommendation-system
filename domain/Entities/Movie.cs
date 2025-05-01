@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Domain.Entities.Abstracts;
 using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class Movie : BaseEntity
+public class Movie : BaseEntityUser<AppUser>
 {
     [MaxLength(256)] public string Title { get; set; } = null!;
 
@@ -14,6 +15,8 @@ public class Movie : BaseEntity
         get => _releaseYear;
         set => _releaseYear = value?.ToUniversalTime();
     }
+    
+    public int? Duration { get; set; }
 
     [MaxLength(2048)] public string? Description { get; set; }
 

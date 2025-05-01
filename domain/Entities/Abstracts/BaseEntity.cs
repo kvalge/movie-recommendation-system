@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Domain.Identifiers;
 
-namespace Domain.Entities;
+namespace Domain.Entities.Abstracts;
 
-public abstract class Entity : Entity<int>, IDomainId
+public abstract class BaseEntity : BaseEntity<int>, IDomainId
 {
 }
 
-public abstract class Entity<TKey> : IDomainId<TKey>
+public abstract class BaseEntity<TKey> : IDomainId<TKey>
     where TKey : IEquatable<TKey>
 {
     public TKey Id { get; set; } = default!;

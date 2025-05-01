@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+using Domain.Entities;
 using Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +29,26 @@ public class AppDbContext : IdentityDbContext<AppUser, AppRole, int>
         {
             relationship.DeleteBehavior = DeleteBehavior.Restrict;
         }
+        
+        builder.Entity<Movie>()
+            .HasMany(m => m.Genres)
+            .WithMany(g => g.Movies)
+            .UsingEntity(j => j.ToTable("MovieGenres"));
+        
+        builder.Entity<Movie>()
+            .HasMany(m => m.Countries)
+            .WithMany(c => c.Movies)
+            .UsingEntity(j => j.ToTable("MovieCountries"));
+        
+        builder.Entity<Movie>()
+            .HasMany(m => m.CastAndCrews)
+            .WithMany(c => c.Movies)
+            .UsingEntity(j => j.ToTable("MovieCastAndCrews"));
+        
+        builder.Entity<Country>()
+            .HasMany(c => c.CastAndCrews)
+            .WithMany(ca => ca.Countries)
+            .UsingEntity(j => j.ToTable("CountryCastAndCrews"));
         
         builder.Entity<AppUserRole>().HasIndex(a => new { a.UserId, a.RoleId }).IsUnique();
 

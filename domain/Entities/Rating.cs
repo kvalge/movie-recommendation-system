@@ -1,8 +1,9 @@
-﻿using Domain.Identity;
+﻿using Domain.Entities.Abstracts;
+using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class Rating : BaseEntity
+public class Rating : BaseEntityUser<AppUser>
 {
     public int RatingValueId { get; set; }
     public RatingValue RatingValue { get; set; } = null!;

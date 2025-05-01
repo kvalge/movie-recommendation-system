@@ -1,14 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities.Abstracts;
+using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class CastAndCrew : BaseEntity
+public class CastAndCrew : BaseEntityUser<AppUser>
 {
     [MaxLength(128)] public string? FirstName { get; set; }
 
     [MaxLength(128)] public string? LastName { get; set; }
 
-    [MaxLength(128)] private string? _stageName;
+    private string? _stageName;
+
+    [MaxLength(128)]
     public string StageName
     {
         get => _stageName ?? GenerateStageName();
@@ -16,6 +20,7 @@ public class CastAndCrew : BaseEntity
     }
 
     private DateTime? _birthDate;
+
     public DateTime? BirthDate
     {
         get => _birthDate;
@@ -27,7 +32,7 @@ public class CastAndCrew : BaseEntity
     [MaxLength(1024)] public string? ImageUrl { get; set; }
 
     public ICollection<Movie> Movies { get; set; } = new List<Movie>();
-    
+
     public ICollection<Country> Countries { get; set; } = new List<Country>();
 
     private string GenerateStageName()

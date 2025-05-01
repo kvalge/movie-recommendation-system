@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Domain.Entities.Abstracts;
 using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class Review : BaseEntity
+public class Review : BaseEntityUser<AppUser>
 {
     [MaxLength(8192)] public string Text { get; set; } = null!;
 

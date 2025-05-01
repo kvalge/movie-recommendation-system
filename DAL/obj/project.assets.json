@@ -366,6 +366,19 @@
           }
         }
       },
+      "BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -898,6 +911,11 @@
         "postgresql.png"
       ]
     },
+    "BLL/1.0.0": {
+      "type": "project",
+      "path": "../BLL/BLL.csproj",
+      "msbuildProject": "../BLL/BLL.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -906,6 +924,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "BLL >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 9.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.0",
@@ -945,6 +964,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\BLL\\BLL.csproj"
+            },
             "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\katri\\asp.net_projects\\movie-recommendation-system\\Domain\\Domain.csproj"
             }
