@@ -35,7 +35,4 @@ public class Movie : BaseEntityUser<AppUser>
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
     
     public ICollection<Rating> Ratings { get; set; } = new List<Rating>();
-    
-    public int UserId { get; set; }
-    public AppUser User { get; set; } = null!;
 }

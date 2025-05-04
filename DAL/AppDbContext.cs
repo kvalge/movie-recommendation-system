@@ -14,6 +14,7 @@ public class AppDbContext : IdentityDbContext<AppUser, AppRole, int>
     public DbSet<Rating> Ratings { get; set; } = null!;
     public DbSet<RatingValue> RatingValues { get; set; } = null!;
     public DbSet<Review> Reviews { get; set; } = null!;
+    public DbSet<MovieRecommendation> MovieRecommendations { get; set; } = null!;
 
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)

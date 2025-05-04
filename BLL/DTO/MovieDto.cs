@@ -39,7 +39,6 @@ public class MovieDto : IDomainId
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     public ICollection<Rating> Ratings { get; set; } = new List<Rating>();
-
-    public int UserId { get; set; }
-    public AppUser User { get; set; } = null!;
+    
+    [MaxLength(1024)] public string? Comments { get; set; }
 }

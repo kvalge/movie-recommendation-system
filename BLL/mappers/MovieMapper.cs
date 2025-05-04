@@ -10,7 +10,7 @@ public class MovieMapper : IMapper<MovieDto, Movie>
     {
         if (entity == null) return null;
         
-        return new MovieDto
+        var dto = new MovieDto
         {
             Id = entity.Id,
             Title = entity.Title,
@@ -18,14 +18,23 @@ public class MovieMapper : IMapper<MovieDto, Movie>
             ReleaseYear = entity.ReleaseYear,
             Duration = entity.Duration,
             ImageUrl = entity.ImageUrl,
+            AvRating = entity.AvRating,
+            RatingCount = entity.RatingCount,
+            Genres = entity.Genres.ToList(),
+            CastAndCrews = entity.CastAndCrews.ToList(),
+            Countries = entity.Countries.ToList(),
+            Reviews = entity.Reviews.ToList(),
+            Ratings = entity.Ratings.ToList()
         };
+        
+        return dto;
     }
 
     public Movie? MapDtoToEntity(MovieDto? dto)
     {
         if (dto == null) return null;
         
-        return new Movie
+        var entity = new Movie
         {
             Id = dto.Id,
             Title = dto.Title,
@@ -33,6 +42,15 @@ public class MovieMapper : IMapper<MovieDto, Movie>
             ReleaseYear = dto.ReleaseYear,
             Duration = dto.Duration,
             ImageUrl = dto.ImageUrl,
+            AvRating = dto.AvRating,
+            RatingCount = dto.RatingCount,
+            Genres = dto.Genres.ToList(),
+            CastAndCrews = dto.CastAndCrews.ToList(),
+            Countries = dto.Countries.ToList(),
+            Reviews = dto.Reviews.ToList(),
+            Ratings = dto.Ratings.ToList()
         };
+
+        return entity;
     }
 } 

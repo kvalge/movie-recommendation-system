@@ -3,7 +3,7 @@ using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class RatingValue : BaseEntityUser<AppUser>
+public class RatingValue : BaseEntity
 {
     public int Value { get; set; }
     

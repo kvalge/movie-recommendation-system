@@ -37,4 +37,8 @@ public class AppUow : BaseUow<AppDbContext>, IAppUow
     private IReviewRepository? _reviewRepository;
     public IReviewRepository ReviewRepository =>
         _reviewRepository ??= new ReviewRepository(UowDbContext);
+    
+    private IMovieRecommendationRepository? _movieRecommendationRepository;
+    public IMovieRecommendationRepository MovieRecommendationRepository => 
+        _movieRecommendationRepository ??= new MovieRecommendationRepository(UowDbContext);
 }

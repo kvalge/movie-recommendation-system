@@ -13,4 +13,6 @@ public class GenreDto: IDomainId
     [MaxLength(2048)] public string? Description { get; set; }
 
     public ICollection<Movie> Movies { get; set; } = new List<Movie>();
+    
+    [MaxLength(1024)] public string? Comments { get; set; }
 }

@@ -85,7 +85,7 @@ public class BaseRepository<TDto, TDomain, TKey> : IRepository<TDto, TKey>
         _repositoryDbSet.Add(entity!);
     }
 
-    public virtual TDto Update(TDto dto)
+    public virtual TDto Update(TDto dto, TKey? userId = default)
     {
         return _uowMapper.MapEntityToDto(_repositoryDbSet.Update(_uowMapper.MapDtoToEntity(dto)!).Entity)!;
     }

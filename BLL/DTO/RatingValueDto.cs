@@ -11,4 +11,6 @@ public class RatingValueDto: IDomainId
     public int Value { get; set; }
     
     public ICollection<Rating> Ratings { get; set; } = new List<Rating>();
+    
+    [MaxLength(1024)] public string? Comments { get; set; }
 }

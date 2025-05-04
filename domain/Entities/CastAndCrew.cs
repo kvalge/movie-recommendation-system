@@ -4,7 +4,7 @@ using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class CastAndCrew : BaseEntityUser<AppUser>
+public class CastAndCrew : BaseEntity
 {
     [MaxLength(128)] public string? FirstName { get; set; }
 

@@ -11,4 +11,5 @@ public interface IAppUow : IUow
     IRatingRepository RatingRepository { get; }
     IRatingValueRepository RatingValueRepository { get; }
     IReviewRepository ReviewRepository { get; }
+    IMovieRecommendationRepository MovieRecommendationRepository { get; }
 }

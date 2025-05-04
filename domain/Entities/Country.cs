@@ -4,7 +4,7 @@ using Domain.Identity;
 
 namespace Domain.Entities;
 
-public class Country : BaseEntityUser<AppUser>
+public class Country : BaseEntity
 {
     [MaxLength(128)] public string Name { get; set; } = null!;
 

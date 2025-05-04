@@ -32,6 +32,8 @@ public class CastAndCrewDto : IDomainId
     public ICollection<Movie> Movies { get; set; } = new List<Movie>();
     
     public ICollection<Country> Countries { get; set; } = new List<Country>();
+    
+    [MaxLength(1024)] public string? Comments { get; set; }
 
     private string GenerateStageName()
     {

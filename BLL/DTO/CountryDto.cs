@@ -13,4 +13,6 @@ public class CountryDto: IDomainId
     public ICollection<Movie> Movies { get; set; } = new List<Movie>();
 
     public ICollection<CastAndCrew> CastAndCrews { get; set; } = new List<CastAndCrew>();
+    
+    [MaxLength(1024)] public string? Comments { get; set; }
 }
